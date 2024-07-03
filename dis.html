@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages Messenger</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="messages-container">
+        <div class="navbar">
+            <div class="navbar-icon" id="homeIcon"><img src="Home.png" alt="Home"></div>
+            <div class="navbar-icon" id="profileIcon"><img src="2 User.png" alt="User"></div>
+            <div class="navbar-icon" id="chatIcon"><img src="Delete.png" alt="Chat"></div>
+            <div class="navbar-icon" id="settingsIcon"><img src="Setting.png" alt="Settings"></div>
+            <div class="navbar-icon" id="logoutIcon"><img src="Logout.png" alt="Logout"></div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <input type="text" placeholder="Rechercher dans Messenger">
+            </div>
+            <div class="contacts">
+                <div class="contact active" data-contact-id="1">
+                    <div class="avatar"></div>
+                    <div class="contact-info">
+                        <span class="contact-name">Maria Mabidikwa</span>
+                        <span class="last-message">Vous: BONJOUR · 33 min</span>
+                    </div>
+                </div>
+                <div class="contact" data-contact-id="2">
+                    <div class="avatar"></div>
+                    <div class="contact-info">
+                        <span class="contact-name">Jean Dupont</span>
+                        <span class="last-message">Vous: Salut · 1 heure</span>
+                    </div>
+                </div>
+                <div class="contact" data-contact-id="3">
+                    <div class="avatar"></div>
+                    <div class="contact-info">
+                        <span class="contact-name">Anna Pierre</span>
+                        <span class="last-message">Vous: Ça va? · 2 heures</span>
+                    </div>
+                </div>
+                <div class="contact" data-contact-id="4">
+                    <div class="avatar"></div>
+                    <div class="contact-info">
+                        <span class="contact-name">Léa Martin</span>
+                        <span class="last-message">Vous: À demain · 3 heures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="message-header">
+                <div class="avatar"></div>
+                <span class="contact-name">Maria Mabidikwa</span>
+                <div class="more-options">...</div>
+            </div>
+            <div class="messages">
+                <div class="message sent">Bonjour Maria!</div>
+                <div class="message received">Bonjour, comment ça va?</div>
+            </div>
+            <div class="message-input">
+                <button class="add-button"><img src="Plus.png" alt="Add"></button>
+                <input type="text" id="messageInput" placeholder="Aa">
+                <button id="sendMessageButton">Envoyer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
